@@ -1,0 +1,270 @@
+## Math HW #1
+------------------------------------------
+e is the number such that
+
+lim 		(e^h - 1)/h = 1
+h -> 0
+
+f(x) = ^4root(t) - 4e^t
+d/dx(f) = (1/4)t^(1/4 - 1) - (4t)e^(t-1)
+		= t^(-3/4)/4 - 4te^(t-1)
+		= 1/4(^4root(t^3)) - 4te^(t-1)
+		
+		
+g(x) = (sqrt(x) - x)/x^2
+g'(x) = (sqrt(x) - x)(x^-2)
+	= (1/(2sqrt(x)) - 1)(x^-2) + (sqrt(x) -x)(-2x^-3) // 
+	
+------------------------------------------
+
+f(x) = x^5/1000 - 2x^3/100
+f'(x) = 5x^4/1000 - 6x^2/100
+
+G(r) = sqrt(r) + cbrt(r)
+G'(r) = (1/2)r^(1/2 - 1) + (1/3)r^(1/3 - 1) //
+
+------------------------------------------
+
+Particle movement function:
+s = t^3-3t
+
+a) speed and acceleration
+b) acceleration after t seconds
+c) acceleration when speed = 0
+
+a)
+so, first, the speed of the particle will be the slope of the function, so:
+	
+	s = t^3-3t
+	d/dx(s) = 3t^2-3
+	
+	let f(t) be the speed of the particle in time t
+		f(t) 3t^2-3
+	
+	now, acceleration is the amount of change in speed, this means, s'' or f'(t)
+		f'(t) = a(t)
+		
+		a(t) = 6t
+	So, acceleration is linear with a slope of 6.
+	
+		results:
+			acceleration = 6t;
+			speed = 3t^2-3
+			
+	b) a(t) = 6t
+	
+	c) a(0) = 6*0 = 0;
+
+Particle's movement functions is s = t^4 - 2t^3 + t^2 - t
+
+	a) Speed and acceleration as a function of time
+	b) Acceleration after 1 second
+	c) Graph all the functions
+	
+		a) Let f(t) be the speed and a(t) the acceleration:
+			f(t)=d/dx(s)
+			a(t)=d^2*s/(dx)^2
+			
+			f(t) = 4t^3 - 6t^2 + 2t - 1
+			a(t) = 12t^2 - 12t + 2
+			
+		b) a(1) = 12 - 12 + 2 = 0 + 2 = 2 //		
+			
+		c) https://www.geogebra.org/calculator/jpjqshtr
+			
+------------------------------------------
+
+The number of species of a tree S in a given area A in the Pasoh forest reserve in Malaysia has been modeled by the power function:
+		
+		S(A) = 0.882A^0.842
+		
+		Where A is measured in square meters.
+		
+Determine S'(100) and interpret your answer.
+
+-- Answer
+		S(A) = 0.882A^0.842
+		
+		S'(A) = (0.882*0.842)A^0.842-1			
+			  = 0.742644A^(-0.158)			// simplify
+			  
+			  
+		S'(100) = 0.742644*100^(-0.158)	
+				~ 0.3587...
+				
+		S'(100) can be interpreted as the variety of the tree species.
+		
+------------------------------------------
+	
+	The tires of a car must be inflated correctly because a high or low 
+	pressure can cause premature worn. Data in the table shows the life
+	L (in thousands of kilometers) for a determinate type of tire at diverse
+	pressures P (in kPa).
+	
+		-----------------------------------------------------------------
+		- P 	| 179 | 193 | 214 | 242 | 262 | 290 | 311	-
+		- L	| 80   | 106 | 126 | 130 | 119 | 113 | 95	-
+		----------------------------------------------------------------- 
+		
+	a) Use a graphic calculator or a computer to model the life of the
+	tire with a quadratic function of the pressure.
+	
+	b) Use the model to calculate dL/dP when P = 200 and P = 300.
+	What is the meaning of the derivative? What are its units? What's the
+	meaning of the signs of the derivative?
+								
+				
+				
+	a) https://www.geogebra.org/calculator/fuqycazj
+	
+	b) The derivative talks about what happens with the life of the tire when the pressure goes up,
+	it only descends, and we should cap this for values of x > 0, since we can't have negative pressure.
+	It indicates that after a certain point (the maximum of the parabola) the life of the tire starts descending
+	to negative, the result of the derivative is a number indicating the "factor of change" of the function.
+	
+------------------------------------------
+
+	Find the points over the curve y=2x^3 + 3x^2 - 12x + 1 where the slope is horizontal
+	
+		y' = 6x^2 + 6x - 12
+		
+		find: 6x^2 + 6x - 12 = 0
+		
+		6x^2 + 6x = 12
+		
+		6x(x + 1) = 12
+		
+		x(x+1) = 2
+		
+		x^2 + x = 2
+		
+		(x + 1/2)^2 - 1/4 = 2
+		
+		(x + 1/2)^2 = 9/4
+		
+		x + 1/2 = 3/2
+		
+				x = 3/2 - 1/2 = 2/2 = 1
+				x = -3/2 - 1/2 = -4/2 = -2
+
+The slope is 0 when x in {-2, 1}.
+
+------------------------------------------
+		
+	For what values of x does f(x) = e^x-2x have slope of value 0?
+	
+		d/dx (e^x-2x) = e^x - 2
+		
+		
+			e^x = 2 
+			x = ln(2)
+			
+	Slope is 0 if x = ln(2).
+	
+------------------------------------------
+
+	Show that the curve y=2e^x+3x+5x^3 does not have a point of slope 2.
+	
+		y' = 2e^x + 15x^2 + 3
+		
+	Find a point where y' = 2
+	
+		
+		 2e^x + 15x^2 + 3 = 2
+		 
+		 2e^x + 15x^2 = -1 // no more simplification
+	
+		ln(2e^x + 15x^2) = ln(-1) // doesn't exist
+		
+------------------------------------------
+
+	Summary of better roller coaster:
+		In the "Building a better roller coaster" application project of Calculus 8th edition by Stewart, I've
+		been provided with information about the slopes of 2 lines, one positive, the other, negative.
+		
+		This slopes were useful to find the lines that crossed two points at 30 units of distance, which later
+		where joined by a parabola that satisfied the slope of both points in different values of x.
+		
+			so we used the two linear functions:
+				
+				a) -1.6x + 36 
+				
+				b) 0.8x
+				
+			To find the points where the parabola crossed at that specific slope, knowing ax^2+bx+c is the function of a parabola, we
+			did also known that the derivative is 2ax+b.
+			
+				So for the derivative of the parabola in those two points of union has to be equal to their linear function.
+				
+					f(x) = ax^2+bx+c
+					
+					f'(30) = -1.6
+					
+					f'(0) = 0.8
+					
+					2a * 0 + b = 0.8 => b = 0.8
+					
+					2a * 30 + 0.8 = -1.6 => a = -2.4/60 = -1/25
+					
+					f(x) = -x^2/25 + 0.8x // Result
+				
+			For the second part I had to find a 11 unknowns equation system such that I can guarantee that the following
+			functions will join the parabola with the linear functions:
+			
+				g(x) = kx^3 + lx^2 + mx + n		0<=x<3
+				h(x) = px^3 + qx^2 + rx + s		27<x<=30
+				
+			So we could make the next table
+			
+				L_1(x) = 0.8x;		L_2(x) = -1.6x + 36
+			
+				values			function					first derivative		second derivative
+				(-inf,0)			0.8x						0.8						0
+				[0, 3)			kx^3 + lx^2 + mx + n		3kx^2 +  2lx + m		6kx + 2l
+				[3, 27]			-x^2/25 + 4x/5			-2x/25 + 4/5			-2/25
+				(27, 30]			px^3 + qx^2 + rx + s		3px^2 +  2qx + r			6px + 2q
+				(30, inf)			-1.6x + 36					-1.6						0
+				
+				(We want to find the second derivative because of two reasons: the most important is that it gives us
+				a constant to work with in the equations, this means: with the first derivative we can find the slopes of some of the
+				values, and then the second provides more constants, so we can build our system of equations. The second reason is
+				related to the first, you can see it as like "we are building from bottom to top", so, that's how you can reason it)
+				
+			With this we can build a system of equations that satisfies each value in each desired point
+			
+				values			equation
+				0				L_1 (0) = g(0)
+								L_1' (0) = g'(0)
+								L_1'' (0) = g''(0)
+								
+				3				g(3) = f(3)
+								g'(3) = f'(3)
+								g''(3) = f''(3)
+								
+				27				f(27) = h(27)
+								f'(27) = h'(27)
+								f''(27) = h''(27)
+								
+				30				h(30) = L_2(30)
+								h'(30) = L_2'(30)
+								h''(30) = L_2''(30)
+								
+			We can finally build a system of equations resolving each value, I'm not going to write it here because it's a bit long.
+			If we create a matrix of these values we will find this:
+			
+				a		b	c	k	l	m	n	p		q		r	s	result
+				0		0	0	0	0	0	1	0		0		0	0	0
+				0		0	0	0	0	1	0	0		0		0	0	0.8
+				0		0	0	0	1	0	0	0		0		0	0	0
+				-9		-3	-1	27	9	3	1	0		0		0	0	0
+				-6		-1	0	27	6	1	0	0		0		0	0	0
+				-2		0	0	18	2	0	0	0		0		0	0	0	
+				729		27	1	0	0	0	0	-19683	-729	-27	-1	0
+				54		1	0	0	0	0	0	-2187	-54		-1	0	0
+				2		0	0	0	0	0	0	-162	-2		0	0	0
+				0		0	0	0	0	0	0	27000	900		30	1	-12
+				0		0	0	0	0	0	0	2700	60		1	0	-1.6
+				0		0	0	0	0	0	0	180		2		0	0	0
+				
+			If you put this matrix and evaluate it in python with pandas or in some software that can solve it, then it will
+			output the variables of each column.
