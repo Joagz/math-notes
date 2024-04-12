@@ -1,0 +1,125 @@
+# Linear Algebra Problem Set #1
+
+**A. Describe the intersection of the three planes *u + v + w + z = 6* and *u + w + z = 4* and *u + w = 2* (all in four-dimensional space). Is it a line or a point or an empty set? What is the intersection if the fourth plane *u = −1* is included? Find a fourth equation that leaves us with no solution.**
+
+### Cleaner
+
+1. Is the intersection a line, a point or an empty set?
+
+- What is the intersection if u = -1 is the fourth plane?
+
+- Find a fourth equation that leaves no solution to the problem.
+
+&nbsp;
+
+a) The intersection is a line because there exists many solutions for the equation. Example:
+
+```if u=1, w=1, z=w, v=2. Or if u=2, w=0, z=2, v=2.```
+
+This means there's two or more solutions.
+
+&nbsp;
+
+b) The intersection is a point, then
+
+```u=-1, v=2, w=3, z=2.
+```
+
+&nbsp;
+
+c) To find an equation that leaves no solution, we should find an equation that leaves no intersection point to the line formed by the system, so we could find a parallel to the first equation, for example:
+
+```u + v + w + z = 6 // u + v + w + z = 10```
+
+This leaves the system of equations with no solution, since the four planes never intersect in a point.
+
+&nbsp;
+
+&nbsp;
+
+**B. Sketch these three lines and decide if the equations are solvable:**
+
+3 by 2 system
+
+x + 2y = 2
+
+x − y = 2
+
+y = 1.
+
+&nbsp;
+
+1. Is the system solvable? why?
+- What happens if all right-hand sides are zero?
+- Is there any nonzero choice of righthand sides that allows the three lines to intersect at the same point?
+
+&nbsp;
+
+The system is not solvable for `y = 1`, the two first lines intersect but the third does not, therefore there's no solution.
+
+If all right-hand sides are zero, then there's a solution if `y` and `x` equal both zero.
+
+There's a solution: if y = 0 then the two lines that meet at `(2, 0)` will meet if `y = 0`, therefore there's a solution.
+
+&nbsp;
+
+&nbsp;
+
+**C. Find two points on the line of intersection of the three planes t = 0 and z = 0 and x+y+z+t = 1 in four-dimensional space.**
+
+If x+y = 1, then there's any point that intersects, because for z and t equal to zero, there's infinity of x and y that would solve.
+
+For example, two point in the plane could be (assuming a point is [x,y,t,z] ):
+
+&nbsp;
+&nbsp;
+&nbsp;
+(1,0,0,0) and (0,1,0,0)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+Explain why the system:
+
+`u + v + w = 2`
+
+`u + 2v + 3w = 1`
+
+`v + 2w = 0`
+
+Is singular. What value should replace the last zero on the right side to allow the equations to have solutions — and what is one of the solutions?
+
+This problem does not have a solution because:
+
+If v = -2w, then:
+
+        u - 4w + 3w = 1 replace with `-2w`
+        u - w = 1
+        w = u - 1       find `w`
+
+we also can find:
+
+        u - 2w + w = 2
+        u - w = 2
+        w = u - 2
+
+So we have that `w = u - 2` &nbsp; and &nbsp; `w = u - 1`, this is contradictory, hence there's no solution.
+
+If we replace the third equation's right side with 1, this means that `u = 1`, `v = -3` and `w = 2`, giving the solution [2, 1, 1].
+
+
+
+
+
+
+
+
+
+
+
+
+
+

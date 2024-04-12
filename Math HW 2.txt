@@ -1,0 +1,173 @@
+Math HW 2
+
+--------------------------------------------
+
+Product rule: If f and g are derivable, then
+	
+	d/dx[f(x)g(x)] = f(x) * d/dx[g(x)] + g(x) * d/dx[g(x)]
+
+Demo:
+
+	u = f(x);	v = g(x);
+
+	The product of these functions can be interpreted as the area of
+	a rectangle:	https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3AIllustration-for-leibniz-product-rule.svg&psig=AOvVaw0kwYhKv9Wflu_6NK4vm-cw&ust=1707993954011000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCA_7jTqoQDFQAAAAAdAAAAABAE
+
+	
+	Δu = f(x+Δx) - f(x)	Δv = g(x+Δx) - f(x)
+
+	(this can be interpreted as if we were adding a small portion to the function 
+	and then substracting the static portion, giving us a changing value)
+
+	with this definition: Δf(x) = f(x + Δx) - f(x); we can say that
+
+		Δ(uv) = (u + Δu)(v + Δv) - uv
+
+	
+	### NOTE: The definition of derivative with Leibinz notation can be written as dy/dx = lim  (Δy/Δx);	y = f(x)
+											       Δx->0
+
+
+	Dividing between Δx, we obtain
+
+		Δ(uv)/Δx = u * Δv/∆x + v * Δu/Δx + Δu * Δv/Δx // This is the rectangle's area
+
+	Making Δx -> 0, we obtain the derivative of uv:
+	
+		d/dx(uv) = lim	 Δ(uv)/Δx = lim	 (u * Δv/∆x + v * Δu/Δx + Δu * Δv/Δx)
+			   Δx->0	    Δx->0
+
+	Applying the laws of limits we obtain:
+
+		u(dv/dx) + v(du/dx) + 0(dv/dx)
+		
+	So
+
+		d/dx(uv) = uv' + u'v //
+
+---------------------------------------------------------------------------------------------
+
+	Examples
+	--------
+
+	(a) If f(x) = xe^x, find d/dx[f(x)]
+	(b) Determine the n-derivative of f^n(x)
+
+	(a) So, applying the product rule, we can say u = x, v = e^x
+
+		f'(x) =  x * e^x + e^x 		// x' = 1
+
+	(b) To determine the n-derivative let's say:
+		
+		f^n(x) = x * e^x + e^x + e^x
+		       = x * e^x + 2e^x
+		       = x * e^x + e^x + 2e^x
+		       = x * e^x + 3e^x
+		       ...
+		       = x * e^x + ne^x = e^x(x + n)
+	
+---------------------------------------------------------------------------------------------
+
+	Examples
+	--------
+
+	Find the derivative of sqrt(t)(a+bt)
+
+	
+	Product rule:
+		f'(x) = sqrt(t)*b + (a+bt) (1/2) t^-1/2
+		      = bsqrt(t) + a/2sqrt(t) + bsqrt(t)
+		      = 2b*sqrt(t) + a/2sqrt(t)
+		      = (a+3bt)/2sqrt(t)
+	
+	Find the derivative of g(x) = sqrt(x)*h(x) where h(4) = 2 and h'(4) = 3, find g'(4)
+
+		g'(x) = sqrt(x) * h'(x) + h(x) * 1/2sqrt(x)
+		
+		g'(4) = sqrt(4) * h'(4) + h(4) * 1/2sqrt(4)
+		      = 2 * 3 + 2/(2*2)
+		      = 6 + 0.5 = 6.5
+
+	 
+---------------------------------------------------------------------------------------------
+
+	Quotient rule: 
+	
+		Δ(u/v) = (u + Δu)/(v + Δv) - u/v = [(u + Δu)v + u(v + Δv)]/ v(v + Δv)
+
+	We find the derivative with the definition: dy/dx = lim (Δy/Δx)
+							    Δx->0
+	
+	d/dx (u/v) = lim(Δ(u/v)/Δx) = lim [v(Δu/Δx) - u(Δv/Δx)]/v(v + Δv)
+		    Δx->0	     Δx->0
+
+		Simplifying...
+	
+	d/dx[f(x)/g(x)] = [ f(x) * d/dx[g(x)] + g(x) * d/dx[f(x)] ]/ [g(x)]²
+	
+
+---------------------------------------------------------------------------------------------
+
+	Reflection:
+		All those Δ's and demostrations come from a simple fact: 
+			
+			To find the slope of a point in the function, you must get closer,
+			then what those Delta symbols mean is some small, and changing number.
+
+			We can interpret:
+				
+				Δx = x - x2
+
+				So this second variable is some point, in X axis, that basically
+				is the second point of our secant line, when we make x2 -> x we get
+				closer and closer. Saying x + Δx is basically saying that, to our variable,
+				we add some distance, let's say x = 6, then we have Δx = .3, so x + Δx = 6.3,
+				
+				Then if we calculate Δf(x) = f(x + Δx) - f(x), what we are doing is taking the
+				difference of that delta, say f(6) = 3 and f(6.3) = 3.14, 
+				then Δf(6) = f(6 + 0.3) - f(6) = 3.14 - 3 = 0.14;
+
+				When we apply the limit in the demostrations, and divide by Δx, we are basically doing:
+
+					lim 	[f(x+h) - f(x)]/h
+					h->0
+
+				The only difference: the notation.
+
+---------------------------------------------------------------------------------------------
+
+	Example
+	-------
+
+	Find y':
+		
+			y = (x²-x-2)/(x³+6)
+
+			
+			y' = [(x² - x - 2) * 3x² + (2x - 1) * (x³ + 6)]/(x³ + 6)²
+			
+			...
+
+			y' = (-x^4 - 2x³ + 6x² + 12x + 6) / (x³ + 6)²
+
+
+
+---------------------------------------------------------------------------------------------
+	
+	Derivation formulas:
+
+		d/dx(c) = 0					// Constant's derivatives are always zero
+
+		(cf)'=0 c * f'					// Constant * function's derivative
+
+		(fg)' = fg' + f'g				// Product Rule
+
+		d/dx(x^n) = nx^(n-1)				// Power Rule
+
+		(f + g)' = f' + g'				// Addition of derivatives
+					
+		(f/g)' = (gf' + g'f) / g²			// Quotient Rule
+	
+		d/dx(e^x) = e^x					// Derivative of exponencial is dependant of the function itself, in the case of Euler's number, the slope when f'(0) = 1. Demostrable by limits and derivative's definition.
+
+		(f - g)' = f' - g' 				// Substraction of derivatives
